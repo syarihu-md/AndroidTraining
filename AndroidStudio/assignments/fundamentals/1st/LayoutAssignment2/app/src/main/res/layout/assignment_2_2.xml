@@ -3,7 +3,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:background="#bfbfbf"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_margin="4dp"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_droid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="ドロイド君の画像ファイル" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_alignRight="@+id/tv_droid"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_droid"
+            android:textColor="#afafaf"
+            android:text="res/ic_launcher.png" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_margin="4dp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:background="#efefef">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#afafaf"
+            android:text="xhdpi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="12,516 bytes" />
+
+    </FrameLayout>
 
 
 </LinearLayout>
